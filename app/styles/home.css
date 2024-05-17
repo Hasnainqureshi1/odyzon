@@ -1,0 +1,378 @@
+@font-face {
+    font-family: 'gruv';
+    src: url('/public/fonts/Gruvilicious.ttf') format('ttf') 
+    
+  }
+
+.header{    
+    padding: 5px;
+    position: fixed;
+    z-index: 90;
+    /* width: 96vw; */
+    width: 100%;
+    padding: 5px 2vw;
+    left: 0;
+    top: 0;
+ 
+   
+ 
+ 
+    color: #fff;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    mix-blend-mode: exclusion;
+  
+    
+  
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    background-color: #000;
+    backdrop-filter: blur(10px);
+}
+/* Skeleton loading styles */
+.skeleton {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: skeleton-loading 1.5s infinite;
+  }
+  
+  @keyframes skeleton-loading {
+    0% {
+      background-position: 200% 0;
+    }
+    100% {
+      background-position: -200% 0;
+    }
+  }
+  
+.menu{
+    text-transform: uppercase;
+    width: calc(94vw - 80px);
+    font-size: 16px;
+    display: block;
+    vertical-align: middle;
+    text-align: right;
+    color: #ffffff;
+    height: -webkit-fill-available;
+    /* background: red; */
+    max-height: -webkit-fill-available;
+    height: 3rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+#logo{
+    font-family: 'gruv';
+    font-size: 2rem;
+    color: #ffffff;
+}
+.hero-bg{
+    background-color: #000;
+    display: flex;
+}
+.hero-section{
+    width: 100vw;
+    position: fixed;
+    height: 100vh;
+    top: 0px;
+    z-index: 10;
+}
+.menu a{
+    padding: 0px 10px ;
+     
+    padding: 0px 10px;
+    font-size: 1.3rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 1.3rem;
+    transition: all .6s ease;
+}
+.menu a:hover{
+    border-top: 2px solid beige;
+}
+.hero-section-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 6rem;
+}
+.hero-section-text h1{
+font-size: 6rem;
+}
+.out-now{
+    color: #fff;
+    z-index: 22;
+    font-size: 7.3vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100vw;
+    height: -webkit-fill-available;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.feed-heading{
+    padding: 0 34px;
+    padding-top: 50px;
+    margin-bottom: 20px;
+    width: 100%;
+    position: sticky;
+    top: 10px;  filter: invert();
+    mix-blend-mode: exclusion;
+    
+}
+.discropgraphy-heading ,.about-heading{
+  z-index: 222;
+    padding-bottom: 30px;
+} 
+.feed-container{
+ 
+padding-top: 49px;
+ 
+flex-direction: column;
+}
+.card-music:hover{
+    transform: scale(1.03);
+    transition: all 0.3s ease-in-out;
+}
+.card-music > img:hover{
+    filter: grayscale(80%);
+    transition: all 0.3s ease-in-out;
+}.card-music > img {
+     
+    transition: all 0.3s ease-in-out;
+}
+.feeds-show{
+    padding: 0 30px;
+    /* max-width: 1639px; */
+     /* max-width: 1639px; */
+     max-height: 100vh;
+     max-width: 1339px;
+     /* padding-top: 216px; */
+     overflow-y: scroll;
+}
+.feeds{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+ 
+}
+.about{
+    /* padding-top :30px */
+}
+.feed-card{
+    margin: 0 30px;
+}
+.feed-heading h2{
+font-size: 2rem;
+ 
+ 
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+@media only screen and (min-width: 1400px) {
+    .feeds-show{
+       max-width: 1500px;
+    }   
+    
+   }
+@media only screen and (max-width: 1400px) {
+ .feeds-show{
+    max-width: 1200px;
+ }   
+ 
+}
+@media only screen and (max-width: 1300px) {
+    .feeds-show {
+        max-width: 1050px;
+    }
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 768px) {
+    /* Styles to apply when the screen width is 768px or less */
+    .feeds-show{
+        padding: 0 0; 
+    }
+    /* Add more styles as needed */
+  }
+  .post_tags{
+    color:#69b4f0;
+  }
+  .post_tags:hover{
+text-decoration: underline;
+  }
+  .odyzon_profile_name:hover{
+    text-decoration: underline;
+  }
+  .feed-card-content-heading{
+    font-weight: 200;
+  }
+  .emoji{
+    display: inline;
+    width: 14px;
+  }
+  .music-grid{
+    grid-column-gap: 2rem;
+    grid-row-gap: 1rem;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    width: 100%;
+    display: grid;
+    padding: 0 80px;
+}
+ .card-music{
+    max-width: 100%;
+    display: inline-block;
+    transition: all 0.4s ease-in-out;
+ }
+/* CSS styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Light gray overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2222;
+  }
+   .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+  
+  /* Additional styles */
+  body {
+    overflow: auto; /* Ensure body overflow is initially set to auto */
+    scroll-behavior: smooth;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  
+  .modal {
+    background-color: white;
+    padding: 3rem 3rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    height: 29rem;
+    width: 24rem;
+}
+.close {
+    position: absolute;
+    top: -4px;
+    right: 11px;
+    cursor: pointer;
+    font-size: 29px;
+}
+.modal h2{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 100%;
+}
+.modal button{
+
+
+text-align: center;
+width: 100%;
+margin-top: 20px;
+border: 1px solid gray;
+padding: 10px;
+transition: all 0.2s ease-in-out;
+}
+.modal button:hover{
+    background-color: #000;
+    color: #fff;
+}
+.modal input{
+
+    width: 100%;
+    /* margin-top: 90px; */
+    margin:10px 0px ;
+    background: #ababab40;
+    font-size: 1rem;
+    padding: 12px;
+    border-radius: 1 -px;
+    border-radius: 10px;
+}
+#subscribeBtn:hover{
+    border: 1px solid #fff;
+}
+#subscribeBtn{
+    transition: all 0.4s ease-in-out;
+    border: 1px solid rgba(255, 255, 255, .3);
+}
+.event-box {
+    /* filter: blur(10px); */
+    /* mix-blend-mode: difference; */
+    /* background: #ffffff1c; */
+    backdrop-filter: blur(28px);
+    border: 1px solid rgba(255, 255, 255, .3);
+}
+
+.about-title{
+    font-size: 36px;
+    text-transform: uppercase;
+    line-height: 34px;
+}
+.required{
+    color: red;
+    text-align: right;
+    font-size: 11px;
+}
+.footer-logo{
+    font-family: 'gruv';
+}
+/* styles.css */
+.footer-logo {
+    font-size: 5.5rem;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+     
+    /* width: 2rem; */
+   justify-content: center;
+   align-items: center;
+    flex-wrap: wrap;
+    width: 14rem;
+  }
+  
+  .icon-link {
+    color: white;
+    font-size: 1.4rem;
+    transition: color 0.3s;
+  }
+  
+  .footer-text{
+    margin-top: 25px;
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+  }
+  .credits-text{
+    margin-bottom: 20px;
+    color: gray;
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .footer-suscribe {
+ 
+  }
