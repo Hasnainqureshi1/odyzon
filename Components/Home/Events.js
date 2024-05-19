@@ -12,7 +12,7 @@ const Events = () => {
         preload="auto"
         className="absolute inset-0 w-full h-full object-cover"
       >
-        <source src={"/_next-video/eventsbg.mp4"} type="video/mp4" />
+        <source src={"_next-video/eventsbg.mp4"} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
@@ -27,8 +27,8 @@ const Events = () => {
 
       {/* Script to handle modal */}
       <script
-  dangerouslySetInnerHTML={{
-    __html: `
+        dangerouslySetInnerHTML={{
+          __html: `
       document.getElementById('subscribeBtn').addEventListener('click', function() {
         var modal = document.createElement('div');
         modal.className = 'modal-overlay';
@@ -80,10 +80,8 @@ const Events = () => {
         });
       });
     `,
-  }}
-/>
-
-     
+        }}
+      />
     </div>
   );
 };

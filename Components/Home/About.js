@@ -11,7 +11,7 @@ const About = () => {
         />
       </div>
       <div className="center flex-col ">
-      <div className="flex justify-center items-center flex-col ">
+      <div className="flex justify-center text-center items-center flex-col ">
         <div className="w-16 h-[2px] bg-white mt-20"></div>
         <h4 className=" mt-10 uppercase text-[0.89rem] font-bold  text-white ">
           My Story
@@ -25,7 +25,7 @@ const About = () => {
         </h1>
       </div>
       </div>
-      <article className=" w-full px-[80px] py-[7rem] relative">
+      <article className=" w-full px-[80px] pt-[7rem] pb-[4rem] relative">
         <div className="text-white text-lg">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

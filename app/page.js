@@ -11,7 +11,7 @@ import Footer from "@/Components/Home/Footer";
 const page = async () => {
   return (
     <>
-      <div className="w-0 h-0  " id='top'></div>
+      <div className="w-0 h-0  " id="top"></div>
       <Navbar />
       <div className=" hero-section">
         <div className="w-full h-full  hero-bg">
@@ -25,17 +25,17 @@ const page = async () => {
         </div>
       </div>
       <div className="w-screen h-screen  "></div>
-      <div id='feed' className="feeds  z-[11] relative bg-white">
-        <div  className="feed-heading">
+      <div id="feed" className="feeds  z-[11] relative bg-white">
+        <div className="feed-heading">
           <h2>Feeds</h2>
         </div>
 
-        <div   className="flex feed-container flex-row  justify-center items-center w-full h-full    ">
+        <div className="flex feed-container flex-row  justify-center items-center w-full h-full    ">
           <Feeds />
         </div>
       </div>
-      <div id='discography' className="feeds  z-[11] relative bg-white">
-        <div   className="feed-heading discropgraphy-heading">
+      <div id="discography" className="feeds  z-[11] relative bg-white">
+        <div className="feed-heading discropgraphy-heading">
           <h2>Discography</h2>
         </div>
 
@@ -43,26 +43,32 @@ const page = async () => {
           <Music />
         </div>
       </div>
-      <div  className="feeds  z-[11] relative bg-white">
+      <div className="feeds  z-[11] relative bg-white">
         <div className="feed-heading discropgraphy-heading">
           <h2>Events</h2>
         </div>
 
-        <div id='events' className="flex   justify-around items-center w-full h-full flex-wrap   ">
+        <div
+          id="events"
+          className="flex   justify-around items-center w-full h-full flex-wrap   "
+        >
           <Events />
         </div>
       </div>
       <div className="feeds about  z-[11] relative bg-black ">
         <div className="feed-heading about-heading">
-          <h2  className=" ">About</h2>
+          <h2 className=" ">About</h2>
         </div>
 
-        <div id='about' className="flex   justify-around items-center w-full h-full flex-wrap   ">
+        <div
+          id="about"
+          className="flex   justify-center flex-col items-center w-full h-full flex-wrap   "
+        >
           <About />
         </div>
       </div>{" "}
       <div className="feeds about  z-[11] relative bg-black ">
-        
+        <div className="w-full about-centerline px-[80px] h-[1px] bg-gray-800"></div>
         <div className="flex   justify-around items-center w-full h-full flex-wrap   ">
           <Footer />
         </div>

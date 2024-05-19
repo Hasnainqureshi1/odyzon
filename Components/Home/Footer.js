@@ -7,7 +7,7 @@ import {
   FaYoutube,
   FaSpotify,
   FaTiktok,
-  FaSoundcloud ,
+  FaSoundcloud,
   FaSnapchatGhost,
 } from "react-icons/fa";
 import { SiApplemusic, SiAmazonmusic } from "react-icons/si";
@@ -20,9 +20,7 @@ const socialLinks = [
   { href: "https://www.spotify.com", icon: <FaSpotify /> },
   { href: "https://www.youtube.com", icon: <FaYoutube /> },
   { href: "https://www.apple.com/apple-music/", icon: <SiApplemusic /> },
-  { href: "https://www.soundcloud.com", icon: <FaSoundcloud  /> },
- 
-  
+  { href: "https://www.soundcloud.com", icon: <FaSoundcloud /> },
 ];
 
 const Footer = () => {
@@ -59,6 +57,7 @@ const Footer = () => {
 
   return (
     <div className="text-white  center flex-col flex ">
+     
       <div>
         <h1 className="text-[4.5rem] footer-logo">Odyzon</h1>
       </div>
@@ -88,7 +87,15 @@ const Footer = () => {
         © 2024 Odyzon. All Rights Reserved.
       </div>{" "}
       <div className="text-[1.rem]  credits-text text-gray-100">
-        Designed With ❤ by <a target="_blank" href="https://fiverr.com/hasnainqureshi4" className="underline"> Hasnain Q </a>
+        Designed With ❤ by{" "}
+        <a
+          target="_blank"
+          href="https://fiverr.com/hasnainqureshi4"
+          className="underline"
+        >
+          {" "}
+          Hasnain Q{" "}
+        </a>
       </div>
       {isModalOpen && (
         <div className="modal-overlay ">
